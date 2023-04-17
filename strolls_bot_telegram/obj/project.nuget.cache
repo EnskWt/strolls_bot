@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "bAJercKdL6KxPeTBhcBMvQpZ/DywlKB+JsJVM7d8GQDWnBhE8ZGk4KdSSQxcz80M0FOK3CjwZPnZNmz4zzrdwQ==",
+  "success": true,
+  "projectFilePath": "E:\\Projects\\strolls_bot\\strolls_bot_telegram\\strolls_bot_telegram.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\igorn\\.nuget\\packages\\newtonsoft.json\\12.0.2\\newtonsoft.json.12.0.2.nupkg.sha512",
+    "C:\\Users\\igorn\\.nuget\\packages\\telegram.bot\\18.0.0\\telegram.bot.18.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
