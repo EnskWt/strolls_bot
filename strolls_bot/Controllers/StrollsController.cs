@@ -97,7 +97,12 @@ namespace strolls_bot.Controllers
             };
 
             // Топ-10 прогулок по заданному IMEI
-            List<TrackLocation> topStrolls = new List<TrackLocation>(strolls).OrderBy(p => p.TotalDistance).Take(10).ToList();
+            List<TrackLocation> topStrolls = new List<TrackLocation>(strolls)
+                .OrderBy(p => p.TotalDistance)
+                .Skip(strolls.Count - 10)
+                .Take(10)
+                .Reverse()
+                .ToList();
 
             Answer answer = new Answer()
             {
@@ -106,8 +111,6 @@ namespace strolls_bot.Controllers
                 DayInfo = dayStrolls,
                 TopStrolls = topStrolls,
             };
-
-            var strollsCount = tracks.Count;
 
             return Ok(answer);
         }

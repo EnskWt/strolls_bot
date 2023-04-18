@@ -18,7 +18,7 @@ public partial class DataContext : DbContext
     public virtual DbSet<TrackLocation> TrackLocations { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        => optionsBuilder.UseSqlServer("Server=DESKTOP-IC2JQNM;Database=Track;Trusted_Connection=True;Encrypt=false;");
+        => optionsBuilder.UseSqlServer("Server=DESKTOP-IC2JQNM;Database=Track;Trusted_Connection=True;Encrypt=false;"); // EF связан с базой данных MS SQL. Данный класс был сгенерирован автоматически инструментом EntityFramework.Tools, по этому связь происходит именно с этой локальной БД. Для работы бота нужно поменять эту строку, указав собственный SQL сервер.
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
